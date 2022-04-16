@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="shortcut icon" href="../../img/Logo_IUH.png" type="image/x-icon">
+        <!-- font awesome  -->
+        <link rel="stylesheet" href="../../modules/fontawesome-free-6.0.0-web/css/all.min.css">
+        <!-- bootstrap  -->
+        <link rel="stylesheet" href="../../modules/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./buy.css">
+        <link rel="stylesheet" href="../../index.css">
+        <title>List</title>
+    </head>
+    <body>
+        <header class="position-fixed w-100" style="z-index: 1;">
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #272343;">
+                <img src="../../img/Logo_IUH.png" alt="" width="10%">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/List/list.html">Products</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Buy now</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <div class="content container-fluid" style="padding-top: 5.5rem;">
+            <div class="row">
+                <div class="col-sm-1 col-md-2 col-lg-3"></div>
+                <div class="col-sm-10 col-md-8 col-lg-6">
+                    <div class="list__buying">
+                        
+                            <!-- <div class="item__img" style="background-image: url(../../img/Products/apple-airpod3.jpg);">
+
+                            </div>
+                            <div class="item__detail">
+                                <div class="item__detail-name font-weight-bold">
+                                    dasdas
+                                </div>
+                                <div class="item__detail-price">
+                                    100000
+                                </div>
+                                <div class="item__detail-qty">
+                                    <button class="btn btn-primary">-</button>
+                                    <span>0</span>
+                                    <button class="btn btn-primary">+</button>
+                                </div>
+                            </div> -->
+                        
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-3"></div>   
+            </div>
+            <div class="position-fixed total__container" style="bottom: 0;right: 20px" onclick="payment()">
+                BUY: 
+                <span class="total"></span> 
+                
+            </div>
+        </div>
+
+
+        <!-- bootstrap  -->
+        <script src="../../modules/js/jquery-3.6.0.min.js"></script>
+        <script src="../../modules/js/bootstrap.min.js"></script>
+        <script src="../../utils/data.js"></script>
+        <script src="../../utils/cart.js"></script>
+        <script src="../../utils/index.js"></script>
+        <script src="./buy.js"></script>
+    </body>
+</html>

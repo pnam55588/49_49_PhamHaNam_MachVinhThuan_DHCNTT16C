@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="shortcut icon" href="../../img/Logo_IUH.png" type="image/x-icon">
+
+        <!-- font awesome  -->
+        <link
+        rel="stylesheet" href="../../modules/fontawesome-free-6.0.0-web/css/all.min.css">
+
+        <!-- bootstrap  -->
+        <link rel="stylesheet" href="../../modules/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./list.css">
+        <link rel="stylesheet" href="../../index.css">
+        <title>List</title>
+    </head>
+    <body>
+        <header class="position-fixed w-100" style="z-index: 1;">
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #272343;">
+                <img src="../../img/Logo_IUH.png" alt="" width="10%">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Sitemap/sitemap.html">Sitemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About/about.html">About us</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-warning mr-4 cart" href="../Buy/buy.html"></a>
+                </div>
+            </nav>
+        </header>
+        <div class="content container" style="padding-top: 5.5rem;">
+            <h3 class="text-center text-info">Danh sách sản phẩm</h3>
+            <div class="list-group" >
+                <button type="button" class="list-group-item list-group-item-action" id="loa" style="z-index: 0;">
+                    Loa
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="tai" style="z-index: 0;">
+                    Tai Nghe
+                </button>
+            </div>
+            <div id="list__container">
+                <!-- render list here-->
+            </div>
+
+        </div>
+
+
+        <!-- bootstrap  -->
+        <script src="../../modules/js/jquery-3.6.0.min.js"></script>
+        <script src="../../modules/js/bootstrap.min.js"></script>
+        <script src="../../utils/data.js"></script>
+        <script src="../../utils/cart.js"></script>
+        <script src="../../utils/index.js"></script>r
+        <script src="./list.js"></script>
+    </body>
+</html>

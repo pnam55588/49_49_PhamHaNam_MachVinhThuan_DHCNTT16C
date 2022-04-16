@@ -1,0 +1,11 @@
+#list__container{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="shortcut icon" href="./img/Logo_IUH.png" type="image/x-icon">
+        <link rel="stylesheet" href="./index.css">
+
+        <!-- font awesome  -->
+        <link rel="stylesheet" href="./modules/fontawesome-free-6.0.0-web/css/all.min.css">
+
+        <!-- bootstrap  -->
+        <link rel="stylesheet" href="./modules/css/bootstrap.min.css">
+        <title>Home</title>
+    </head>
+    <body>
+        
+        <header class="position-fixed w-100" style="z-index: 1;">
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #272343;">
+                <img src="./img/Logo_IUH.png" alt="" width="10%">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/List/list.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Sitemap/sitemap.html">Sitemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/About/about.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId" id="dropdown">
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="open-search">Search</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-warning mr-4 cart" href="./pages/Buy/buy.html">
+                        
+                    </a>
+                    
+                </div>
+            </nav>
+            
+        </header>
+        <div class="content" style="padding-top: 4.2rem;">
+            <!-- Banner -->
+            <div class="w-100">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="fit-img carousel-item-img" style="background-image: url(./img/banner-bose.jpg);"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="fit-img carousel-item-img" style="background-image: url(./img/banner-ip.JPG);"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="fit-img carousel-item-img" style="background-image: url(./img/banner-speaker.JPG);"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="fit-img carousel-item-img" style="background-image: url(./img/banner-ear.jpg);"></div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <br/><br/>
+            
+            <!-- sample product -->
+            <div class="sampleproduct container-fluid">
+                <div class="sample-item row">
+                    <div class="col-md-6">
+                        <img src="./img/Products/jbl-charge-4.jpg" class="img-responsive" alt="Image"/>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center">
+                        <div>
+                            <h2>Loa JBL Charge 4</h2>
+                            <br/>
+                            <ul>
+                                <li>Thiết kế hình trụ bền chắc</li>
+                                <li>Kết nối bluetooth 4.2</li>
+                                <li>Công xuất 30W</li>
+                                <li>Dung lượng pin 7500mAh</li>
+                                <li>Chuẩn chống nước IPX7</li>
+                            </ul>
+                            <a class="button" href="./pages/Details/detail.html"  onclick="getDetail(1)">Chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="sample-item row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3 d-flex align-items-center">
+                        <div>
+
+                            <h2>Tai nghe Sony WH-CH150</h2>
+                            <br/>
+                            <ul>
+                                <li>Thiết kế đơn giản, gọn nhẹ</li>
+                                <li>Thời lượng pin 35 giờ</li>
+                                <li>Tương thích với trợ lý ảo trên điện thoại</li>
+                            </ul>
+                            <a href="./pages/Details/detail.html" class="button" onclick="getDetail(6)">Chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./img/Products/sony-wh-ch150.jpg" class="img-responsive" alt="Image"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="footer-item col-md-1"></div>
+                <div class="footer-item col-md-3">
+                  <i class="fa fa-copyright" aria-hidden="true"> </i>
+                  <span>2022 All Right Reserved</span>
+                </div>
+                <div class="footer-item col-md-6"></div>
+                <div class="footer-item col-md-2"><span>AUDIO FOR LIFE</span></div>
+              </div>
+        </footer>
+
+        <!-- modal -->
+        <div class="modal" id="modal-login" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="text-error">Login</h3>
+                        <button type="button" name="" id="close-login" class="btn" btn-lg btn-block>X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-3">
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Enter email" 
+                                        onkeyup="setEmail(event)"
+                                    >
+                                    <small id="emailError" class="form-text text-danger d-none">Help text</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Password</label>
+                                    <input type="password" class="form-control" name="email" id="password" placeholder="Enter password"
+                                        onkeyup="setPassword(event)"
+                                    >
+                                    <small id="passwordError" class="form-text text-danger d-none">Help text</small>
+                                </div>
+                                <input name="" id="login" class="btn btn-primary" type="submit" value="Login" onclick=" return validateAccount()">
+                                <a href="./pages/Register/register.html">Sign up a account</a>
+                                <div class="text-danger" id="tbLogin">*</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal" id="modal-search" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="text-error">tìm kiếm</h3>
+                        <button type="button" name="" id="close-search" class="btn" btn-lg btn-block>X</button>
+                    </div>
+                    <div class="modal-body" method="get">
+                        <div class="p-3">
+                            <form action="./pages/Details" >
+                                <div class="form-group">
+                                    <label for="">Tên mặt hàng muốn tìm kiêm:</label>
+                                    <select id="productList" name="productList" form="productForm">
+                                        <!-- render product-name hear -->
+                                    </select>
+                                </div>
+                                <a href="./pages/Details/detail.html">
+                                    <input type="button" value="search" id="search-btn">
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- bootstrap  -->
+        <script src="./modules/js/jquery-3.6.0.min.js"></script>
+        <script src="./modules/js/bootstrap.min.js"></script>
+
+        <!-- js  -->
+        <script src="./utils/data.js"></script>
+        <script src="./utils/cart.js"></script>
+        <script src="./utils/validate.js"></script>
+        <script src="./utils/index.js"></script>
+
+    </body>
+</html>

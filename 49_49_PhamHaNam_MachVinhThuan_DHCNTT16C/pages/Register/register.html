@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+        rel="shortcut icon" href="../../img/Logo_IUH.png" type="image/x-icon">
+        <!-- font awesome  -->
+        <link rel="stylesheet" href="../../modules/fontawesome-free-6.0.0-web/css/all.min.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../../modules/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="../../index.css">
+    </head>
+    <body>
+        <header class="position-fixed w-100" style="z-index: 1;"> 
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #272343;">
+                <img src="../../img/Logo_IUH.png" alt="" width="10%">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../List/list.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Sitemap/sitemap.html">Sitemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About/about.html">About us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Register/register.html">Register</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-warning mr-4 cart" href="../Buy/buy.html">
+                        
+                    </a>
+                    
+                </div>
+            </nav>
+        </header>
+        <div class="content" style="padding-top: 5.5rem;">
+            <div class="row" id="form-register">
+                <div class="col-0 col-sm-1 col-md-2 col-lg-4"></div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                        <fieldset class="border border-dark rounded p-4">
+                            <h3>Đăng kí</h3>
+                            <div class="form-group">
+                                <label for="" class="text-info">Name</label>
+                                <input type="text" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="name">
+                                <small id="tbName" class="form-text text-danger">*</small>   
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="text-info">Email</label>
+                                <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="email">
+                                <small id="tbEmail" class="form-text text-danger">*</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="text-info">Password</label>
+                                <input type="password" class="form-control" name="" id="password" placeholder="password">
+                                <small id="tbPassword" class="form-text text-danger">*</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="text-info">Comfirm Password</label>
+                                <input type="password" class="form-control" name="" id="rePassword" placeholder="comfirm password">
+                                <small id="tbRePassword" class="form-text text-danger">*</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="" class="text-info">Phone</label>
+                              <input type="text" class="form-control" name="" id="phone" aria-describedby="helpId" placeholder="">
+                              <small id="tbPhone" class="form-text text-danger">*</small>
+                            </div>
+                            <button type="submit" id="register" class="btn btn-primary">Đăng kí</button>
+                            <small id="tbRegister" class="form-text text-danger">*</small>
+                        </fieldset>
+                </div>
+                <div class="col-0 col-sm-1 col-md-2 col-lg-4"></div>
+                
+            </div>
+            <div class="row d-none" id="info" >
+                <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <div class="table-responsive">
+                        <h3>Thông tin tài khoản</h3>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            </div>
+        </div>
+
+
+        <!-- bootstrap -->
+        <script src="../../modules/js/jquery-3.6.0.min.js"></script>
+        <script src="../../modules/js/bootstrap.min.js"></script>
+        <script src="../../utils/cart.js"></script>
+        <script src="./register.js"></script>
+
+    </body>
+</html>
