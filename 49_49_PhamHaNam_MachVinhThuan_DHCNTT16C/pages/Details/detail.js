@@ -12,11 +12,11 @@ $(".row").append(`
         <h2 class="mt-5">
             ${formatVND(item.price)}
         </h2>
-        <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart" onclick="addToCart(${item.id})">
+        <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
             <i class="fa fa-shopping-cart"></i>
             Add to cart
         </button>
-        <a href="../Buy/buy.html" class="btn btn-primary btn-rounded" onclick="handleBuy(${item.id}})">Buy Now</a>
+        <a href="#" class="btn btn-primary btn-rounded" onclick="handleBuy(${item.id}})">Buy Now</a>
     </div>
    
 `)

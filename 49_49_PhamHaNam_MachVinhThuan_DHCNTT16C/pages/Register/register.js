@@ -84,10 +84,10 @@ $(document).ready(function(){
         let phone = $("#phone").val()
 
         const account = {
-            name,
-            email,
-            password,
-            phone
+            name ,
+            email ,
+            password ,
+            phone 
         }
         $("table tbody").append(`
             <tr>
